@@ -31,5 +31,7 @@ app.listen(port, () => {
 });
 
 app.use('/', require('./controllers/home'));
+app.use('/sections', require('./controllers/sections'));
+app.use('/seats', require('./controllers/seats'));
 
 module.exports = app;
